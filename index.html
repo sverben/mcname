@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://bs-community.github.io/skinview3d/js/skinview3d.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="ranks.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div class="view">
+        <label for="name" class="hidden">Name</label>
+        <input autofocus autocomplete="off" id="name" type="text" class="bar" placeholder="Name / UUID">
+        <h1 id="player">Loading...</h1>
+        <div class="content">
+            <div class="skinContainer">
+                <canvas class="skin" id="skin"></canvas>
+                <div class="animations">
+                    <img src="person-walking-solid.svg" alt="" class="animation" id="walk">
+                    <img src="person-running-solid.svg" alt="" class="animation" id="run">
+                    <img src="paper-plane-solid.svg" alt="" class="animation" id="fly">
+                </div>
+            </div>
+            <div class="right">
+                <div class="profile">
+                    <h2>Profile</h2>
+                    <div class="data">
+                        <b class="key">Rank</b>
+                        <div id="rank" class="value">Loading...</div>
+                    </div>
+                    <div class="data">
+                        <b class="key">UUID</b>
+                        <div id="uuid" class="value">Loading...</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="history">
+                        <h2>Name History</h2>
+                        <div class="list" id="history">
+                            <div>Loading...</div>
+                        </div>
+                    </div>
+                    <div class="skins">
+                        <h2>Skins</h2>
+                        <div class="list" id="skins">
+                            <img id="head" class="head" src="https://mc-heads.net/avatar/sverben">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
